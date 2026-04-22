@@ -47,12 +47,12 @@ After successfully compiling the code, a new executable file will be generated i
   4.Saving Progress: Do not close the console window forcefully. To ensure your library inventory and user accounts are saved to books.txt and users.txt, always exit the program gracefully by selecting option 8.
 
   ## Assumptions
-  -Trust-Based Inputs: The system assumes the user provides the correct data types (e.g., entering an integer when asked for an ID). Entering letters when numbers are expected is caught by a basic fail-safe, but complex invalid inputs may cause unexpected behavior.
-  -Plaintext Storage: For simplicity and demonstration purposes, passwords and user data are stored in plaintext in the users.txt file.
-  -Fixed Library Capacity: The MainLibrary object instantiated in main() is assumed to have a fixed initial physical capacity for books, users, and branches.
+  - Trust-Based Inputs: The system assumes the user provides the correct data types (e.g., entering an integer when asked for an ID). Entering letters when numbers are expected is caught by a basic fail-safe, but complex invalid inputs may cause unexpected behavior.
+  - Plaintext Storage: For simplicity and demonstration purposes, passwords and user data are stored in plaintext in the users.txt file.
+  - Fixed Library Capacity: The MainLibrary object instantiated in main() is assumed to have a fixed initial physical capacity for books, users, and branches.
 
   ## Limitations
-  -Fixed Array Limits: The system currently relies on fixed-size pointer arrays (e.g., Book*[100], User*[100], and Transaction transactions[100]). The system cannot hold more than 100 books, users, or transactions per session without triggering a capacity error.
-  -Basic Search/Matching: Searching for users and books is done sequentially using raw IDs. There is no hash map or binary search optimization for large datasets.
-  -Simulated AI: The "AI Book Recommendation" feature uses the <random> library to simulate an AI decision by picking a random available book. It does not use machine learning or analyze user reading history.
-  -Single-Session Transactions: Transaction logs are currently kept in memory and displayed in the console. They are not written to a persistent text file; only the library inventory and user base are saved to the disk upon exit.
+  - Fixed Array Limits: The system currently relies on fixed-size pointer arrays (e.g., Book*[100], User*[100], and Transaction transactions[100]). The system cannot hold more than 100 books, users, or transactions per session without triggering a capacity error.
+  - Basic Search/Matching: Searching for users and books is done sequentially using raw IDs. There is no hash map or binary search optimization for large datasets.
+  - Simulated AI: The "AI Book Recommendation" feature uses the <random> library to simulate an AI decision by picking a random available book. It does not use machine learning or analyze user reading history.
+  - Single-Session Transactions: Transaction logs are currently kept in memory and displayed in the console. They are not written to a persistent text file; only the library inventory and user base are saved to the disk upon exit.

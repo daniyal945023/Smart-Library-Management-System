@@ -1,0 +1,3 @@
+ict|daniyal|1
+mvc|saad|1
+calculus|ali|0

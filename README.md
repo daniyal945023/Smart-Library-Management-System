@@ -56,3 +56,5 @@ After successfully compiling the code, a new executable file will be generated i
   - Basic Search/Matching: Searching for users and books is done sequentially using raw IDs. There is no hash map or binary search optimization for large datasets.
   - Simulated AI: The "AI Book Recommendation" feature uses the <random> library to simulate an AI decision by picking a random available book. It does not use machine learning or analyze user reading history.
   - Single-Session Transactions: Transaction logs are currently kept in memory and displayed in the console. They are not written to a persistent text file; only the library inventory and user base are saved to the disk upon exit.
+
+Connect with me on Linkedin: https://www.linkedin.com/in/mds970?utm_source=share_via&utm_content=profile&utm_medium=member_android

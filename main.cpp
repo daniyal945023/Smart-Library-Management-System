@@ -2,7 +2,7 @@
 #include <string>
 #include <fstream>
 
-// Include your newly modular headers
+
 #include "Book.h"
 #include "User.h"
 #include "Transaction.h"
@@ -22,7 +22,7 @@ int main() {
     User* trackedUsers[100];
     int trackedUserCount = 0;
 
-    // --- DATA LOADING PHASE ---
+    // DATA LOADING PHASE 
     cout << "Loading previous library data...\n";
     ifstream bookFile("books.txt");
     if (bookFile.is_open()) {
@@ -56,7 +56,7 @@ int main() {
         userFile.close();
     }
     cout << "Loading complete.\n";
-    // --------------------------
+    
 
     int choice = 0;
 

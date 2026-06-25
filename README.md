@@ -3,7 +3,8 @@
 
 # C++ Library Management System
 
-An Object-Oriented, modular, and menu-driven Library Management System built in C++. This project demonstrates core OOP concepts (Inheritance, Polymorphism, Encapsulation, Abstraction) and features a persistent local data storage system using file handling.
+An Object-Oriented, modular, and menu-driven Library Management System built in C++. This project demonstrates core OOP concepts (Inheritance, Polymorphism, Encapsulation, Abstraction) and features a persistent local data storage system using file handling.The class structure,definitions and object oriented design was built by me, while the entire menu-driven system in main.cpp, file and error handling was done by Huzaifa.
+A key and distinct feature of this project is that it heavily relies on raw pointers and dynamic memory management
 
 ## 📌 Use Cases
 This system supports the following core use cases:

@@ -235,17 +235,19 @@ int main() {
                 
                 ofstream bOut("books.txt");
                 for(int i = 0; i < trackedBookCount; ++i) {
-                    bOut << trackedBooks[i]->getBookTitle() << "|" 
+                    bOut << trackedBooks[i]->getBookId() << "|" 
+                         << trackedBooks[i]->getBookTitle() << "|" 
                          << trackedBooks[i]->getBookAuthor() << "|" 
-                         << trackedBooks[i]->isBookAvailable() << "\n";
+                         << trackedBooks[i]->isBookAvailable() << "\n";     
                 }
                 bOut.close();
 
                 ofstream uOut("users.txt");
-                for(int i = 0; i < trackedUserCount; ++i) {
-                    uOut << trackedUsers[i]->getUserName() << "|" 
+                 for(int i = 0; i < trackedUserCount; ++i) {
+                    uOut << trackedUsers[i]->getUserId() << "|" 
+                         << trackedUsers[i]->getUserName() << "|" 
                          << trackedUsers[i]->getUserPassword() << "|" 
-                         << trackedUsers[i]->getUserActiveStatus() << "\n";
+                         << trackedUsers[i]->getUserActiveStatus() << "\n";  
                 }
                 uOut.close();
 

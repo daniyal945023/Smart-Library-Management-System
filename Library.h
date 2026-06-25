@@ -30,5 +30,5 @@ public:
     void performTransaction(Transaction& transaction, Book &book, User &user, std::string transactionType);
     void returnBook(Book *book, User *user, Transaction& t);
     void AIBookrecommendation(User* user);
-    ~Library();
+    virtual ~Library();
 };
